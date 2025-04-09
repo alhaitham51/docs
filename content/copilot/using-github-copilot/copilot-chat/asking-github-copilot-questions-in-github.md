@@ -92,6 +92,17 @@ Depending on the question you ask, and your enterprise and organization settings
 1. To start a new conversation, click {% data reusables.copilot.pencil-paper-icon %} at the top left of the page.
 1. To see a list of your previous conversations, click {% octicon "sidebar-collapse" aria-label="Open sidebar" %} at the top left of the page.
 
+### Regenerating a response with a different model
+
+> [!NOTE]
+> This feature is currently in {% data variables.release-phases.public_preview %} and is subject to change.
+
+After {% data variables.product.prodname_copilot_short %} responds to your question, you can regenerate the same prompt using a different model by clicking the retry icon ({% octicon "sync" aria-label="The re-run icon" %}) below the response. The new response will use your selected model and maintain the full context of the conversation.
+
+You can switch between responses to compare the results from different models.
+
+For help deciding which model to use, see [AUTOTITLE](/copilot/using-github-copilot/ai-models/choosing-the-right-ai-model-for-your-task).
+
 ### Using subthreads in a conversation
 
 > [!NOTE]
@@ -324,6 +335,28 @@ You can ask {% data variables.product.prodname_copilot_short %} to explain the c
    > If you know the SHA for a commit, instead of navigating to the commit, you can ask {% data variables.product.prodname_copilot_short %} about the commit from any page in the repository on {% data variables.product.github %} by including the SHA in your message. For example, `What changed in commit a778e0eab?`
 
 {% data reusables.copilot.stop-response-generation %}
+
+## Using images in {% data variables.product.prodname_copilot_chat_short %}
+
+> [!NOTE]
+> * Attaching images to chat prompts is currently in {% data variables.release-phases.public_preview %} and is subject to change.
+> * You can only attach an image in the immersive view of {% data variables.product.prodname_copilot_chat_short %} ([https://github.com/copilot](https://github.com/copilot)), not in the chat panel.
+
+You can attach an image to {% data variables.product.prodname_copilot_short %} and then ask about the image. For example, you can attach:
+
+{% data reusables.copilot.image-questions-and-file-types %}
+
+### Attaching an image to your chat prompt
+
+1. Go to the immersive view of {% data variables.product.prodname_copilot_chat_short %} ([https://github.com/copilot](https://github.com/copilot)).
+1. Make sure you have **GPT-4o** selected in the AI model picker at the top of the page.
+1. Do one of the following:
+
+   * Copy an image and paste it into the prompt box at the bottom of the page.
+   * Click {% octicon "paperclip" aria-label="Add attachment" %} in the prompt box, then click **Image**. Browse to the image file you want to attach, select it and click **Open**.
+   * Drag and drop an image file from your operating system's file explorer into the prompt box.
+
+{% data reusables.copilot.type-prompt-for-image %}
 
 ## Accessing {% data variables.product.prodname_copilot_chat_short %} from the search bar
 
